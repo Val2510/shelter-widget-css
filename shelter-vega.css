@@ -123,3 +123,9 @@
 .b-roomitem__title {
     color: #C72B32 !important;
 }
+
+.scheme .icon-adult {
+    /* усиливаем красный оттенок */
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%) saturate(3120%)
+            hue-rotate(344deg) brightness(88%) contrast(96%);
+}
