@@ -1,0 +1,94 @@
+/* основной красный */
+:root {
+    --shelter-accent: #C72B32;
+}
+
+/* ===== КНОПКИ ===== */
+
+button,
+.btn,
+.button,
+input[type="button"],
+input[type="submit"],
+a.btn,
+a.button {
+    background-color: var(--shelter-accent) !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: 2px solid var(--shelter-accent) !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color .2s ease-in-out,
+        color .2s ease-in-out,
+        border-color .2s ease-in-out,
+        box-shadow .2s ease-in-out,
+        transform .2s ease-in-out;
+}
+
+/* hover / focus на кнопках */
+button:hover,
+button:focus-visible,
+.btn:hover,
+.btn:focus-visible,
+.button:hover,
+.button:focus-visible,
+a.btn:hover,
+a.btn:focus-visible,
+a.button:hover,
+a.button:focus-visible {
+    background-color: #ffffff !important;
+    color: var(--shelter-accent) !important;
+    border-color: var(--shelter-accent) !important;
+}
+
+/* ===== ПЛЮС / МИНУС ===== */
+
+.counter button,
+.guests-counter button,
+[data-role="minus"],
+[data-role="plus"] {
+    background-color: var(--shelter-accent) !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: 2px solid var(--shelter-accent) !important;
+}
+
+.counter button:hover,
+.guests-counter button:hover,
+[data-role="minus"]:hover,
+[data-role="plus"]:hover {
+    background-color: #ffffff !important;
+    color: var(--shelter-accent) !important;
+}
+
+/* ===== ЗАГОЛОВКИ ===== */
+
+h1, h2, h3, h4, h5, h6,
+.widget-title,
+.search-title,
+.room-title {
+    color: var(--shelter-accent) !important;
+}
+
+/* ===== ЦЕНЫ ===== */
+
+.price,
+.room-price,
+.total-price,
+.tariff-price,
+.currency {
+    color: var(--shelter-accent) !important;
+}
+
+/* ===== ИКОНКИ ===== */
+
+.icon,
+i,
+svg {
+    color: var(--shelter-accent) !important;
+    fill: var(--shelter-accent) !important;
+    stroke: var(--shelter-accent) !important;
+}
+
+
