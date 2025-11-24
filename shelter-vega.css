@@ -50,3 +50,6 @@ s-btn s-btn--link s-btn--addroom {
 	color: #ffffff !important;
 }
 
+.b-roomitem__field--btn .s-btn--addroom .icon-plus {
+		color: #ffffff !important;
+}
