@@ -1,90 +1,116 @@
-/* основной красный */
+/* Основной фирменный цвет виджета */
 :root {
     --shelter-accent: #C72B32;
 }
 
-/* ===== КРУПНЫЕ КНОПКИ (ИСКАТЬ, ДОБАВИТЬ НОМЕР, ГОТОВО и т.п.) ===== */
-/* ВАЖНО: здесь НЕ трогаем голый button, только кнопки с классами .btn/.button и input-ы */
+/* ===== КНОПКИ ==================================================== */
+/* Все кнопки внутри контейнера виджета (по умолчанию id="book-widget") */
 
-.btn,
-.button,
-input[type="button"],
-input[type="submit"],
-a.btn,
-a.button {
+#book-widget button,
+#book-widget .btn,
+#book-widget .button,
+#book-widget [type="button"],
+#book-widget [type="submit"] {
     background-color: var(--shelter-accent) !important;
     color: #ffffff !important;
     border-radius: 10px !important;
     border: 2px solid var(--shelter-accent) !important;
     font-weight: 600;
     cursor: pointer;
-    transition:
-        background-color .2s ease-in-out,
-        color .2s ease-in-out,
-        border-color .2s ease-in-out,
-        box-shadow .2s ease-in-out,
-        transform .2s ease-in-out;
+    transition: background-color .2s ease-in-out,
+                color .2s ease-in-out,
+                border-color .2s ease-in-out,
+                box-shadow .2s ease-in-out,
+                transform .2s ease-in-out;
 }
 
-/* hover / focus на этих больших кнопках */
-.btn:hover,
-.btn:focus-visible,
-.button:hover,
-.button:focus-visible,
-a.btn:hover,
-a.btn:focus-visible,
-a.button:hover,
-a.button:focus-visible,
-input[type="button"]:hover,
-input[type="button"]:focus-visible,
-input[type="submit"]:hover,
-input[type="submit"]:focus-visible {
+/* Ссылки, стилизованные как кнопки */
+#book-widget a.btn,
+#book-widget a.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    background-color: var(--shelter-accent) !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: 2px solid var(--shelter-accent) !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out,
+                color .2s ease-in-out,
+                border-color .2s ease-in-out,
+                box-shadow .2s ease-in-out,
+                transform .2s ease-in-out;
+}
+
+/* Ховер / фокус по кнопкам */
+#book-widget button:hover,
+#book-widget button:focus-visible,
+#book-widget .btn:hover,
+#book-widget .btn:focus-visible,
+#book-widget .button:hover,
+#book-widget .button:focus-visible,
+#book-widget a.btn:hover,
+#book-widget a.btn:focus-visible,
+#book-widget a.button:hover,
+#book-widget a.button:focus-visible {
     background-color: #ffffff !important;
     color: var(--shelter-accent) !important;
     border-color: var(--shelter-accent) !important;
 }
 
-/* ===== ПЛЮС / МИНУС В СЧЁТЧИКЕ ГОСТЕЙ ===== */
-/* Берём размер и позиционирование из main.css Shelter,
-   мы только красим знак и гарантируем прозрачный фон */
+/* ===== ПЛЮС / МИНУС в счётчиках гостей ========================== */
+/* Обычно это маленькие кнопки внутри счётчика – окрасим их также в красный */
 
-.b-input-spinner button[data-spin],
-.js-input-spinner button[data-spin] {
-    color: var(--shelter-accent) !important;      /* красный + / - */
-    background-color: transparent !important;     /* прозрачный фон как в оригинале */
-    border: 0 !important;                         /* без рамки, как задумано Shelter */
-    font-weight: 600;
+#book-widget .counter button,
+#book-widget .guests-counter button,
+#book-widget [data-role="minus"],
+#book-widget [data-role="plus"] {
+    background-color: var(--shelter-accent) !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: 2px solid var(--shelter-accent) !important;
 }
 
-/* ===== ЗАГОЛОВКИ ===== */
-
-h1, h2, h3, h4, h5, h6,
-.widget-title,
-.search-title,
-.room-title {
+/* Ховер для плюс/минус */
+#book-widget .counter button:hover,
+#book-widget .guests-counter button:hover,
+#book-widget [data-role="minus"]:hover,
+#book-widget [data-role="plus"]:hover {
+    background-color: #ffffff !important;
     color: var(--shelter-accent) !important;
 }
 
-/* ===== ЦЕНЫ ===== */
+/* ===== ЗАГОЛОВКИ, ЦЕНЫ, ИКОНКИ ================================ */
 
-.price,
-.room-price,
-.total-price,
-.tariff-price,
-.currency {
+/* Заголовки */
+#book-widget h1,
+#book-widget h2,
+#book-widget h3,
+#book-widget h4,
+#book-widget h5,
+#book-widget h6,
+#book-widget .widget-title,
+#book-widget .search-title,
+#book-widget .room-title {
     color: var(--shelter-accent) !important;
 }
 
-/* ===== ИКОНКИ ===== */
+/* Цены */
+#book-widget .price,
+#book-widget .room-price,
+#book-widget .total-price,
+#book-widget .tariff-price,
+#book-widget .currency {
+    color: var(--shelter-accent) !important;
+}
 
-.icon,
-i,
-svg {
+/* Иконки (font-иконки и svg) */
+#book-widget .icon,
+#book-widget i,
+#book-widget svg {
     color: var(--shelter-accent) !important;
     fill: var(--shelter-accent) !important;
     stroke: var(--shelter-accent) !important;
-}
-
-.b-roomitem__field--btn {
-    background: #C72B32 !important;
 }
