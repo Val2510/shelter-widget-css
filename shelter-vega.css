@@ -84,3 +84,7 @@ svg {
     fill: var(--shelter-accent) !important;
     stroke: var(--shelter-accent) !important;
 }
+
+.b-roomitem__field--btn {
+    background: #C72B32 !important;
+}
