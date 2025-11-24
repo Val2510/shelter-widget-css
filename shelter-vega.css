@@ -4,6 +4,7 @@
 }
 
 /* ===== КРУПНЫЕ КНОПКИ (ИСКАТЬ, ДОБАВИТЬ НОМЕР, ГОТОВО и т.п.) ===== */
+/* ВАЖНО: здесь НЕ трогаем голый button, только кнопки с классами .btn/.button и input-ы */
 
 .btn,
 .button,
@@ -25,7 +26,7 @@ a.button {
         transform .2s ease-in-out;
 }
 
-/* hover / focus на кнопках */
+/* hover / focus на этих больших кнопках */
 .btn:hover,
 .btn:focus-visible,
 .button:hover,
@@ -44,38 +45,15 @@ input[type="submit"]:focus-visible {
 }
 
 /* ===== ПЛЮС / МИНУС В СЧЁТЧИКЕ ГОСТЕЙ ===== */
-/* маленькие кнопки вокруг количества гостей */
+/* Берём размер и позиционирование из main.css Shelter,
+   мы только красим знак и гарантируем прозрачный фон */
 
-button[data-role="minus"],
-button[data-role="plus"],
-.counter button,
-.guests-counter button,
-.counter [data-role="minus"],
-.counter [data-role="plus"],
-.guests-counter [data-role="minus"],
-.guests-counter [data-role="plus"] {
-    background-color: #ffffff !important;             /* белый фон */
-    color: var(--shelter-accent) !important;          /* красный знак + / - */
-    border-radius: 4px !important;
-    border: 1px solid var(--shelter-accent) !important;
-    padding: 0 10px !important;
-    min-width: 32px;
-    height: 32px;
-    line-height: 30px;
+.b-input-spinner button[data-spin],
+.js-input-spinner button[data-spin] {
+    color: var(--shelter-accent) !important;      /* красный + / - */
+    background-color: transparent !important;     /* прозрачный фон как в оригинале */
+    border: 0 !important;                         /* без рамки, как задумано Shelter */
     font-weight: 600;
-}
-
-/* ховер для плюс/минус */
-button[data-role="minus"]:hover,
-button[data-role="plus"]:hover,
-.counter button:hover,
-.guests-counter button:hover,
-.counter [data-role="minus"]:hover,
-.counter [data-role="plus"]:hover,
-.guests-counter [data-role="minus"]:hover,
-.guests-counter [data-role="plus"]:hover {
-    background-color: var(--shelter-accent) !important;
-    color: #ffffff !important;
 }
 
 /* ===== ЗАГОЛОВКИ ===== */
@@ -106,5 +84,3 @@ svg {
     fill: var(--shelter-accent) !important;
     stroke: var(--shelter-accent) !important;
 }
-
-
