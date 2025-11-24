@@ -1,116 +1,54 @@
-/* Основной фирменный цвет виджета */
-:root {
-    --shelter-accent: #C72B32;
-}
-
-/* ===== КНОПКИ ==================================================== */
-/* Все кнопки внутри контейнера виджета (по умолчанию id="book-widget") */
-
-#book-widget button,
-#book-widget .btn,
-#book-widget .button,
-#book-widget [type="button"],
-#book-widget [type="submit"] {
-    background-color: var(--shelter-accent) !important;
-    color: #ffffff !important;
+/* ОСНОВНЫЕ КНОПКИ */
+.fd24-btn, 
+.fd24-button,
+button.fd24-btn,
+input[type="button"].fd24-btn,
+input[type="submit"].fd24-btn,
+.fd24-btn-primary {
+    background-color: #C72B32 !important;
+    color: white !important;
     border-radius: 10px !important;
-    border: 2px solid var(--shelter-accent) !important;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color .2s ease-in-out,
-                color .2s ease-in-out,
-                border-color .2s ease-in-out,
-                box-shadow .2s ease-in-out,
-                transform .2s ease-in-out;
+    border: 2px solid #C72B32 !important;
+    transition: all 0.3s ease !important;
 }
 
-/* Ссылки, стилизованные как кнопки */
-#book-widget a.btn,
-#book-widget a.button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none !important;
-    background-color: var(--shelter-accent) !important;
-    color: #ffffff !important;
-    border-radius: 10px !important;
-    border: 2px solid var(--shelter-accent) !important;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color .2s ease-in-out,
-                color .2s ease-in-out,
-                border-color .2s ease-in-out,
-                box-shadow .2s ease-in-out,
-                transform .2s ease-in-out;
+/* ХОВЕР КНОПОК */
+.fd24-btn:hover, 
+.fd24-button:hover,
+button.fd24-btn:hover,
+input[type="button"].fd24-btn:hover,
+input[type="submit"].fd24-btn:hover,
+.fd24-btn-primary:hover {
+    background-color: white !important;
+    color: #C72B32 !important;
+    border-color: #C72B32 !important;
 }
 
-/* Ховер / фокус по кнопкам */
-#book-widget button:hover,
-#book-widget button:focus-visible,
-#book-widget .btn:hover,
-#book-widget .btn:focus-visible,
-#book-widget .button:hover,
-#book-widget .button:focus-visible,
-#book-widget a.btn:hover,
-#book-widget a.btn:focus-visible,
-#book-widget a.button:hover,
-#book-widget a.button:focus-visible {
-    background-color: #ffffff !important;
-    color: var(--shelter-accent) !important;
-    border-color: var(--shelter-accent) !important;
+/* ЦЕНЫ - они сейчас серые */
+.fd24-price,
+.fd24-price-value,
+.fd24-text-price {
+    color: #C72B32 !important;
 }
 
-/* ===== ПЛЮС / МИНУС в счётчиках гостей ========================== */
-/* Обычно это маленькие кнопки внутри счётчика – окрасим их также в красный */
-
-#book-widget .counter button,
-#book-widget .guests-counter button,
-#book-widget [data-role="minus"],
-#book-widget [data-role="plus"] {
-    background-color: var(--shelter-accent) !important;
-    color: #ffffff !important;
-    border-radius: 10px !important;
-    border: 2px solid var(--shelter-accent) !important;
+/* ЗАГОЛОВКИ НОМЕРОВ */
+.fd24-room-name {
+    color: #C72B32 !important;
 }
 
-/* Ховер для плюс/минус */
-#book-widget .counter button:hover,
-#book-widget .guests-counter button:hover,
-#book-widget [data-role="minus"]:hover,
-#book-widget [data-role="plus"]:hover {
-    background-color: #ffffff !important;
-    color: var(--shelter-accent) !important;
+/* КНОПКИ + и - в выборе количества */
+.fd24-counter-btn {
+    color: #C72B32 !important;
+    border-color: #C72B32 !important;
 }
 
-/* ===== ЗАГОЛОВКИ, ЦЕНЫ, ИКОНКИ ================================ */
-
-/* Заголовки */
-#book-widget h1,
-#book-widget h2,
-#book-widget h3,
-#book-widget h4,
-#book-widget h5,
-#book-widget h6,
-#book-widget .widget-title,
-#book-widget .search-title,
-#book-widget .room-title {
-    color: var(--shelter-accent) !important;
+/* ИКОНКИ (если есть) */
+.fd24-icon {
+    color: #C72B32 !important;
 }
 
-/* Цены */
-#book-widget .price,
-#book-widget .room-price,
-#book-widget .total-price,
-#book-widget .tariff-price,
-#book-widget .currency {
-    color: var(--shelter-accent) !important;
-}
-
-/* Иконки (font-иконки и svg) */
-#book-widget .icon,
-#book-widget i,
-#book-widget svg {
-    color: var(--shelter-accent) !important;
-    fill: var(--shelter-accent) !important;
-    stroke: var(--shelter-accent) !important;
+/* ДАТЫ И ВЫБОР ПЕРИОДА */
+.fd24-date-item.active {
+    border-color: #C72B32 !important;
+    color: #C72B32 !important;
 }
