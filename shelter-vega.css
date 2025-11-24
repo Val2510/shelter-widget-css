@@ -42,24 +42,34 @@ a.button:focus-visible {
     border-color: var(--shelter-accent) !important;
 }
 
-/* ===== ПЛЮС / МИНУС ===== */
+/* ===== ПЛЮС / МИНУС в счётчиках гостей ===== */
+/* маленькие кнопки вокруг количества гостей */
 
 .counter button,
 .guests-counter button,
-[data-role="minus"],
-[data-role="plus"] {
-    background-color: var(--shelter-accent) !important;
-    color: #ffffff !important;
-    border-radius: 10px !important;
-    border: 2px solid var(--shelter-accent) !important;
+.counter [data-role="minus"],
+.counter [data-role="plus"],
+.guests-counter [data-role="minus"],
+.guests-counter [data-role="plus"] {
+    background-color: #ffffff !important;             /* белый фон */
+    color: var(--shelter-accent) !important;          /* красный знак + / - */
+    border-radius: 4px !important;
+    border: 1px solid var(--shelter-accent) !important;
+    padding: 0 10px !important;
+    min-width: 32px;
+    height: 32px;
+    line-height: 30px;
 }
 
+/* лёгкий ховер для них (можно вообще убрать, если не нужен) */
 .counter button:hover,
 .guests-counter button:hover,
-[data-role="minus"]:hover,
-[data-role="plus"]:hover {
-    background-color: #ffffff !important;
-    color: var(--shelter-accent) !important;
+.counter [data-role="minus"]:hover,
+.counter [data-role="plus"]:hover,
+.guests-counter [data-role="minus"]:hover,
+.guests-counter [data-role="plus"]:hover {
+    background-color: var(--shelter-accent) !important;
+    color: #ffffff !important;
 }
 
 /* ===== ЗАГОЛОВКИ ===== */
@@ -90,5 +100,6 @@ svg {
     fill: var(--shelter-accent) !important;
     stroke: var(--shelter-accent) !important;
 }
+
 
 
