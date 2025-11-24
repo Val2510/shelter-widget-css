@@ -31,7 +31,11 @@
     width: 100%;
     height: 2px;
 }
-
+/* Плюс на ховере — красный */
+.b-roomitem__field--btn .s-btn--addroom:hover .icon-plus::before,
+.b-roomitem__field--btn .s-btn--addroom:hover .icon-plus::after {
+    background-color: #C72B32; /* цвет как у текста на ховере */
+}
 
 
 
@@ -54,10 +58,6 @@
 }
 
 
-.price grid-cell {
-	color: #C72B32 !important;
-}
-
 /* Кнопка "Добавить номер" */
 .b-roomitem__field--btn .s-btn--addroom {
     background-color: #C72B32 !important;
@@ -74,20 +74,5 @@
     border-color: #C72B32 !important;
 }
 
-/* Плюсик внутри кнопки, чтобы менял цвет вместе с текстом */
-.b-roomitem__field--btn .s-btn--addroom .icon-plus {
-    color: inherit !important;
-}
 
-.b-result-item__name-holder {
-	color: #C72B32 !important;
-}
-
-s-btn s-btn--link s-btn--addroom {
-	color: #ffffff !important;
-}
-
-.b-roomitem__field--btn .s-btn--addroom .icon-plus {
-		color: #ffffff !important;
-}
 
