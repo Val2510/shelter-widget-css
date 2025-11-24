@@ -1,4 +1,22 @@
 /* ОСНОВНЫЕ КНОПКИ */
+
+/* основное состояние */
+.s-btn-book.s-btn--primary {
+    background-color: #C72B32 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: 2px solid #C72B32 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* ховер */
+.s-btn-book.s-btn--primary:hover {
+    background-color: #ffffff !important;
+    color: #C72B32 !important;
+    border-color: #C72B32 !important;
+}
+
+
 .fd24-btn, 
 .fd24-button,
 button.fd24-btn,
@@ -52,3 +70,4 @@ input[type="submit"].fd24-btn:hover,
     border-color: #C72B32 !important;
     color: #C72B32 !important;
 }
+
