@@ -41,3 +41,7 @@
 .b-roomitem__field--btn .s-btn--addroom .icon-plus {
     color: inherit !important;
 }
+
+.b-result-item__name-holder {
+	color: #C72B32 !important;
+}
