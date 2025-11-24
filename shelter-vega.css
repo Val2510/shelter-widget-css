@@ -31,6 +31,12 @@
     width: 100%;
     height: 2px;
 }
+/* Плюс на обычном состоянии — белый (как мы делали) */
+.b-roomitem__field--btn .s-btn--addroom .icon-plus::before,
+.b-roomitem__field--btn .s-btn--addroom .icon-plus::after {
+    background-color: #ffffff; /* обычное состояние */
+}
+
 /* Плюс на ховере — красный */
 .b-roomitem__field--btn .s-btn--addroom:hover .icon-plus::before,
 .b-roomitem__field--btn .s-btn--addroom:hover .icon-plus::after {
@@ -73,6 +79,7 @@
     color: #C72B32 !important;
     border-color: #C72B32 !important;
 }
+
 
 
 
