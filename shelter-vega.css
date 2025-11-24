@@ -132,3 +132,13 @@
             hue-rotate(344deg) brightness(88%) contrast(96%);
 }
 
+.b-filter__title {
+    color: #C72B32 !important;
+}
+
+.b-input-spinner .icon-minus,
+.b-input-spinner .icon-plus-span {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%) saturate(3120%)
+            hue-rotate(344deg) brightness(88%) contrast(96%);
+}
+
