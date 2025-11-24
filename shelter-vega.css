@@ -80,9 +80,13 @@
     border-color: #C72B32 !important;
 }
 
-.price-variants .price .amount {
+/* Цена: число + знак валюты красные */
+.price-variants .price.grid-cell,
+.price-variants .price.grid-cell .amount,
+.price-variants .price.grid-cell span {
     color: #C72B32 !important;
 }
+
 
 
 
