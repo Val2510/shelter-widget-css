@@ -3,9 +3,8 @@
     --shelter-accent: #C72B32;
 }
 
-/* ===== КНОПКИ ===== */
+/* ===== КРУПНЫЕ КНОПКИ (ИСКАТЬ, ДОБАВИТЬ НОМЕР, ГОТОВО и т.п.) ===== */
 
-button,
 .btn,
 .button,
 input[type="button"],
@@ -27,8 +26,6 @@ a.button {
 }
 
 /* hover / focus на кнопках */
-button:hover,
-button:focus-visible,
 .btn:hover,
 .btn:focus-visible,
 .button:hover,
@@ -36,15 +33,21 @@ button:focus-visible,
 a.btn:hover,
 a.btn:focus-visible,
 a.button:hover,
-a.button:focus-visible {
+a.button:focus-visible,
+input[type="button"]:hover,
+input[type="button"]:focus-visible,
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible {
     background-color: #ffffff !important;
     color: var(--shelter-accent) !important;
     border-color: var(--shelter-accent) !important;
 }
 
-/* ===== ПЛЮС / МИНУС в счётчиках гостей ===== */
+/* ===== ПЛЮС / МИНУС В СЧЁТЧИКЕ ГОСТЕЙ ===== */
 /* маленькие кнопки вокруг количества гостей */
 
+button[data-role="minus"],
+button[data-role="plus"],
 .counter button,
 .guests-counter button,
 .counter [data-role="minus"],
@@ -59,9 +62,12 @@ a.button:focus-visible {
     min-width: 32px;
     height: 32px;
     line-height: 30px;
+    font-weight: 600;
 }
 
-/* лёгкий ховер для них (можно вообще убрать, если не нужен) */
+/* ховер для плюс/минус */
+button[data-role="minus"]:hover,
+button[data-role="plus"]:hover,
 .counter button:hover,
 .guests-counter button:hover,
 .counter [data-role="minus"]:hover,
@@ -100,6 +106,3 @@ svg {
     fill: var(--shelter-accent) !important;
     stroke: var(--shelter-accent) !important;
 }
-
-
-
