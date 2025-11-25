@@ -215,3 +215,26 @@
     filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
             saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
 }
+
+
+/* Кнопка "Бронировать" в блоке оплаты */
+.panel-payments .b-pay-method__right .s-btn.s-btn--primary {
+    background-color: #C72B32 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: 2px solid #C72B32 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* ховер этой кнопки */
+.panel-payments .b-pay-method__right .s-btn.s-btn--primary:hover {
+    background-color: #ffffff !important;
+    color: #C72B32 !important;
+    border-color: #C72B32 !important;
+}
+
+/* Иконка способа оплаты – красим через filter */
+.panel-payments .b-pay-method__left img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
+            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%);
+}
