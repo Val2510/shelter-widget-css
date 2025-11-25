@@ -238,3 +238,17 @@
     background-color: #C72B32 !important;
 }
 
+/* Навигационные стрелки "Назад" / "Вперёд" в шаге оформления */
+
+/* текст делаем красным */
+.state-mob-panel-cart .navigator-link,
+.state-mob-panel-cart .navigator-link span {
+    color: #C72B32 !important;
+}
+
+/* фоновые стрелочки перекрашиваем через filter */
+.state-mob-panel-cart .navigator-link.back,
+.state-mob-panel-cart .navigator-link.forward {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
+            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%);
+}
