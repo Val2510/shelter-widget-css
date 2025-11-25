@@ -210,3 +210,8 @@
 .b-checkbox label a {
     color: #C72B32 !important;
 }
+
+.x-tl-booking-widget__icon {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
+            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
+}
