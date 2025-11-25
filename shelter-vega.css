@@ -290,3 +290,12 @@
 .x-tl-booking-widget {
     --tlBookingButtonBackgroundColor: #C72B32 !important;
 }
+.x-tl-booking-widget {
+    background: #C72B32 !important;
+    background-color: #C72B32 !important;
+}
+
+
+.b-pay-method__price {
+    color: #C72B32 !important;
+}
