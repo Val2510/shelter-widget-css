@@ -363,8 +363,7 @@
 
 /* Иконка домика в блоке "Оплата" */
 .l-panel2__content.panel-payments .b-pay-method__left img {
-    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
-            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
+    filter: hue-rotate(-45deg) saturate(1.8) brightness(0.95) !important;
 }
 
 /* Плашки-иконки слева (отель, заказчик и т.п.) на странице заказа */
@@ -378,3 +377,4 @@
     filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
             saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
 }
+
