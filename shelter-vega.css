@@ -203,3 +203,10 @@
 .l-panel2__title-text {
     color: #C72B32 !important;
 }
+
+/* Текст у чекбоксов (соглашение, ПДн и т.п.) */
+.b-checkbox label,
+.b-checkbox label span,
+.b-checkbox label a {
+    color: #C72B32 !important;
+}
