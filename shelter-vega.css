@@ -358,3 +358,8 @@
     border-bottom: solid #C72B32 !important;
 }
 
+/* Иконка домика в блоке "Оплата" */
+.l-panel2__content.panel-payments .b-pay-method__left img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
+            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
+}
