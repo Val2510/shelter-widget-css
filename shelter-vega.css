@@ -317,3 +317,11 @@
     filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
             saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
 }
+
+/* Иконки имя / телефон / email в блоке клиента */
+.panel-customer .list .person::before,
+.panel-customer .list .phones::before,
+.panel-customer .list .email::before {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
+            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
+}
