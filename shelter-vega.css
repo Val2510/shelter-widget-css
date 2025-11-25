@@ -339,3 +339,7 @@
 .icon-for-panel ignore-i18n {
     background-color: #C72B32 !important;
 }
+
+.ignore-i18n {
+    color: #C72B32 !important;
+}
