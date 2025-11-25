@@ -352,3 +352,6 @@
     color: #C72B32 !important;
 }
 
+.hotelTitle ignore-i18n {
+    border-bottom: solid #C72B32 !important;
+}
