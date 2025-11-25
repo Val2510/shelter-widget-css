@@ -307,6 +307,14 @@
         color: #ffffff !important;
     }
 }
+@media (max-width: 768px) {
+    .b-result-item__main-option .icon-user {
+        /* делаем иконку белой на мобилках */
+        filter: brightness(0) invert(1) !important;
+    }
+}
+
+
 
 .icon-hotel icon-for-panel {
     filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
@@ -343,3 +351,4 @@
 .ignore-i18n {
     color: #C72B32 !important;
 }
+
