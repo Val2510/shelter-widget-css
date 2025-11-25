@@ -269,3 +269,20 @@
     color: #C72B32 !important;
     border-color: #C72B32 !important;
 }
+
+
+/* кнопка готово на главной */
+.s-btn s-btn--primary s-btn--ready {
+    background-color: #C72B32 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    border: 2px solid #C72B32 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* ховер этой кнопки */
+.s-btn s-btn--primary s-btn--ready {
+    background-color: #ffffff !important;
+    color: #C72B32 !important;
+    border-color: #C72B32 !important;
+}
