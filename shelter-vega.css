@@ -157,3 +157,12 @@
     filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
             saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%);
 }
+
+/* Выбранный день (кружочек) – светло-красный фон, красный текст */
+#ui-datepicker-div .ui-datepicker-calendar a.ui-state-default.ui-state-highlight.ui-state-active,
+#ui-datepicker-div .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-default {
+    background-color: #FDE5E6 !important;  /* светло-красный */
+    border-color:   #FDE5E6 !important;
+    color: #C72B32 !important;
+    border-radius: 50%;                    /* чтобы остался кружком */
+}
