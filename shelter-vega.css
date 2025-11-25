@@ -100,7 +100,7 @@
 }
 
 .b-result-item__main-option .icon-user {
-    /* перекрасить картинку фильтром (если она однотонная) */
+    /* перекрасить картинку фильтром  */
     filter: brightness(0) saturate(100%) invert(23%) sepia(92%) saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%);
 }
 
@@ -164,7 +164,7 @@
     background-color: #FDE5E6 !important;  /* светло-красный */
     border-color:   #FDE5E6 !important;
     color: #C72B32 !important;
-    border-radius: 50%;                    /* чтобы остался кружком */
+    border-radius: 50%;                    
 }
 
 /* Иконки бургер-меню и крестик в мобильной верхней панели */
@@ -177,11 +177,21 @@
 /* Стрелки "пред/след" в календаре */
 #ui-datepicker-div .ui-datepicker-prev::after,
 #ui-datepicker-div .ui-datepicker-next::after {
-    color: #C72B32 !important;   /* твой красный */
+    color: #C72B32 !important;   
 }
 
 #ui-datepicker-div .ui-datepicker-prev::after,
 #ui-datepicker-div .ui-datepicker-next::after {
     filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
             saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%);
+}
+
+/* Все стрелки-иконки drop-down делаем красными через filter */
+.b-select-ghost::after,
+.select2-container .select2-selection__arrow::after,
+.b-simple-drop::after,
+.b-combobox__trigger::after,
+.icon-drop {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
+            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
 }
