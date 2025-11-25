@@ -367,3 +367,14 @@
             saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
 }
 
+/* Плашки-иконки слева (отель, заказчик и т.п.) на странице заказа */
+.order .icon-for-panel {
+    background-color: #FDE5E6 !important;  /* светло-красный фон вместо жёлтого */
+}
+
+/* Сами пиктограммы внутри этих плашек делаем красными через filter */
+.order .icon-for-panel.icon-hotel,
+.order .icon-for-panel.icon-customer {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(92%)
+            saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%) !important;
+}
