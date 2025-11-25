@@ -270,18 +270,20 @@
 }
 
 
-/* Кнопка "Готово" в попапе выбора номера */
+/* Кнопка "Готово" в попапе выбора номера (iframe rooms.html) */
+.l-popup-container--rooms .s-btn.s-btn--primary.s-btn--ready,
 .b-rooms .s-btn.s-btn--primary.s-btn--ready {
-    background-color: #C72B32 !important;
+    background: #C72B32 !important;      /* именно background */
     color: #ffffff !important;
     border-radius: 10px !important;
     border: 2px solid #C72B32 !important;
     transition: all 0.3s ease !important;
 }
 
-/* ховер для "Готово" */
+/* hover */
+.l-popup-container--rooms .s-btn.s-btn--primary.s-btn--ready:hover,
 .b-rooms .s-btn.s-btn--primary.s-btn--ready:hover {
-    background-color: #ffffff !important;
+    background: #ffffff !important;
     color: #C72B32 !important;
     border-color: #C72B32 !important;
 }
@@ -355,3 +357,4 @@
 .hotelTitle ignore-i18n {
     border-bottom: solid #C72B32 !important;
 }
+
