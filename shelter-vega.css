@@ -286,3 +286,7 @@
     color: #C72B32 !important;
     border-color: #C72B32 !important;
 }
+
+.x-tl-booking-widget {
+    --tlBookingButtonBackgroundColor: #C72B32 !important;
+}
