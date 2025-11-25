@@ -299,3 +299,11 @@
     color: #C72B32 !important;
 }
 
+
+/* На мобильных делаем заголовок и "2 места" белыми */
+@media (max-width: 768px) {
+    .b-result-item__name,
+    .b-result-item__main-option {
+        color: #ffffff !important;
+    }
+}
