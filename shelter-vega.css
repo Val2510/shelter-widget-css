@@ -253,8 +253,8 @@
             saturate(3120%) hue-rotate(344deg) brightness(88%) contrast(96%);
 }
 
-/* кнопка искать на главной */
-.s-btn s-btn--primary {
+/* Кнопка "Искать" в самом начале (форма поиска) */
+.b-start__submit-field .s-btn.s-btn--primary {
     background-color: #C72B32 !important;
     color: #ffffff !important;
     border-radius: 10px !important;
@@ -262,17 +262,16 @@
     transition: all 0.3s ease !important;
 }
 
-
-/* ховер этой кнопки */
-.s-btn s-btn--primary:hover {
+/* ховер */
+.b-start__submit-field .s-btn.s-btn--primary:hover {
     background-color: #ffffff !important;
     color: #C72B32 !important;
     border-color: #C72B32 !important;
 }
 
 
-/* кнопка готово на главной */
-.s-btn s-btn--primary s-btn--ready {
+/* Кнопка "Готово" в попапе выбора номера */
+.b-rooms .s-btn.s-btn--primary.s-btn--ready {
     background-color: #C72B32 !important;
     color: #ffffff !important;
     border-radius: 10px !important;
@@ -280,8 +279,8 @@
     transition: all 0.3s ease !important;
 }
 
-/* ховер этой кнопки */
-.s-btn s-btn--primary s-btn--ready {
+/* ховер для "Готово" */
+.b-rooms .s-btn.s-btn--primary.s-btn--ready:hover {
     background-color: #ffffff !important;
     color: #C72B32 !important;
     border-color: #C72B32 !important;
@@ -299,3 +298,4 @@
 .b-pay-method__price {
     color: #C72B32 !important;
 }
+
